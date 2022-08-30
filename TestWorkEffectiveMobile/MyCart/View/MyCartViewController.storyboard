@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h3k-bK-TNO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mark-Pro.ttf">
+            <string>MarkPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Cart View Controller-->
+        <scene sceneID="PlN-iW-H7B">
+            <objects>
+                <viewController id="h3k-bK-TNO" customClass="MyCartViewController" customModule="TestWorkEffectiveMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cA6-JB-jfU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aak-FM-LzO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aer-Wr-4Ek">
+                                        <rect key="frame" x="224" y="10.5" width="109" height="23"/>
+                                        <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08X-yU-qO9">
+                                        <rect key="frame" x="42" y="3.5" width="37" height="37"/>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="65a-rL-3vo"/>
+                                            <constraint firstAttribute="width" secondItem="08X-yU-qO9" secondAttribute="height" multiplier="1:1" id="A7c-kq-89i"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Vector (6)"/>
+                                        <connections>
+                                            <action selector="backButtonTap:" destination="h3k-bK-TNO" eventType="touchUpInside" id="NQg-7b-Bjc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABN-3k-aF3">
+                                        <rect key="frame" x="342" y="3.5" width="37" height="37"/>
+                                        <color key="backgroundColor" red="0.93257945779999996" green="0.46463531260000002" blue="0.34504765269999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ABN-3k-aF3" secondAttribute="height" multiplier="1:1" id="MUf-tX-sEo"/>
+                                            <constraint firstAttribute="height" constant="37" id="dPY-A6-XNb"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Group (3)"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KX4-lS-zZu"/>
+                                    <constraint firstItem="ABN-3k-aF3" firstAttribute="width" secondItem="ABN-3k-aF3" secondAttribute="height" multiplier="1:1" id="OjF-3u-J7r"/>
+                                    <constraint firstItem="08X-yU-qO9" firstAttribute="centerY" secondItem="aak-FM-LzO" secondAttribute="centerY" id="RIj-mt-oBj"/>
+                                    <constraint firstItem="ABN-3k-aF3" firstAttribute="leading" secondItem="aer-Wr-4Ek" secondAttribute="trailing" constant="9" id="TiF-Yw-EQm"/>
+                                    <constraint firstItem="aer-Wr-4Ek" firstAttribute="centerY" secondItem="aak-FM-LzO" secondAttribute="centerY" id="gOf-WG-uh5"/>
+                                    <constraint firstItem="08X-yU-qO9" firstAttribute="leading" secondItem="aak-FM-LzO" secondAttribute="leading" constant="42" id="mMV-fs-gri"/>
+                                    <constraint firstItem="ABN-3k-aF3" firstAttribute="centerY" secondItem="aak-FM-LzO" secondAttribute="centerY" id="oTG-fJ-06K"/>
+                                    <constraint firstAttribute="trailing" secondItem="ABN-3k-aF3" secondAttribute="trailing" constant="35" id="sIM-Yg-m7R"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4v-ol-YtE">
+                                <rect key="frame" x="0.0" y="206" width="414" height="690"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8q-g0-OoB">
+                                        <rect key="frame" x="44" y="592" width="326" height="54"/>
+                                        <color key="backgroundColor" red="1" green="0.43137254899999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="UYo-NW-c6t"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Checkout">
+                                            <fontDescription key="titleFontDescription" name="MarkPro" family="Mark Pro" pointSize="20"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlC-xt-uGa">
+                                        <rect key="frame" x="4" y="564" width="406" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="kBp-AB-5XY"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FqL-HA-FZH">
+                                        <rect key="frame" x="4" y="471" width="406" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="e8Y-C9-lpE"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uIC-4m-na3">
+                                        <rect key="frame" x="55" y="488" width="324" height="51"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="8o1-t9-Ed2">
+                                                <rect key="frame" x="0.0" y="0.0" width="324" height="19.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2C7-4M-XrH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="197" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$6,000 us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWY-8U-6V9">
+                                                        <rect key="frame" x="249" y="0.0" width="75" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="XQI-5w-Mrc">
+                                                <rect key="frame" x="0.0" y="31.5" width="324" height="19.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWj-WY-pUa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="238.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPn-wq-67y">
+                                                        <rect key="frame" x="290.5" y="0.0" width="33.5" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Q80-BH-mdP">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="419"/>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ScX-bM-jaP">
+                                            <size key="itemSize" width="0.0" height="0.0"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UME-59-owE">
+                                        <rect key="frame" x="0.0" y="646" width="414" height="44"/>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.0" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.0" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uIC-4m-na3" firstAttribute="leading" secondItem="Q4v-ol-YtE" secondAttribute="leading" constant="55" id="3qm-IJ-Hav"/>
+                                    <constraint firstItem="UME-59-owE" firstAttribute="top" secondItem="i8q-g0-OoB" secondAttribute="bottom" id="7dZ-m5-ehU"/>
+                                    <constraint firstItem="nlC-xt-uGa" firstAttribute="leading" secondItem="Q4v-ol-YtE" secondAttribute="leading" constant="4" id="8i0-MQ-eNp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q80-BH-mdP" secondAttribute="trailing" id="8qs-0K-hJf"/>
+                                    <constraint firstAttribute="bottom" secondItem="UME-59-owE" secondAttribute="bottom" id="Gh2-yI-Cxp"/>
+                                    <constraint firstItem="FqL-HA-FZH" firstAttribute="leading" secondItem="Q4v-ol-YtE" secondAttribute="leading" constant="4" id="JLe-Au-o8g"/>
+                                    <constraint firstAttribute="trailing" secondItem="uIC-4m-na3" secondAttribute="trailing" constant="35" id="K8C-ZR-07f"/>
+                                    <constraint firstAttribute="bottom" secondItem="i8q-g0-OoB" secondAttribute="bottom" constant="44" id="KLF-8U-F2X"/>
+                                    <constraint firstItem="Q80-BH-mdP" firstAttribute="top" secondItem="Q4v-ol-YtE" secondAttribute="top" constant="44" id="Unf-ai-cNt"/>
+                                    <constraint firstItem="FqL-HA-FZH" firstAttribute="top" secondItem="Q80-BH-mdP" secondAttribute="bottom" constant="8" id="g8T-gb-7mT"/>
+                                    <constraint firstAttribute="trailing" secondItem="nlC-xt-uGa" secondAttribute="trailing" constant="4" id="gru-q2-7XE"/>
+                                    <constraint firstItem="Q80-BH-mdP" firstAttribute="leading" secondItem="Q4v-ol-YtE" secondAttribute="leading" id="iML-Ec-5vd"/>
+                                    <constraint firstItem="nlC-xt-uGa" firstAttribute="top" secondItem="FqL-HA-FZH" secondAttribute="bottom" constant="91" id="n3Y-qE-nvx"/>
+                                    <constraint firstAttribute="trailing" secondItem="i8q-g0-OoB" secondAttribute="trailing" constant="44" id="qUi-dP-zX4"/>
+                                    <constraint firstItem="i8q-g0-OoB" firstAttribute="leading" secondItem="Q4v-ol-YtE" secondAttribute="leading" constant="44" id="qpm-hl-6tV"/>
+                                    <constraint firstAttribute="trailing" secondItem="UME-59-owE" secondAttribute="trailing" id="rf7-RI-NLd"/>
+                                    <constraint firstItem="UME-59-owE" firstAttribute="leading" secondItem="Q4v-ol-YtE" secondAttribute="leading" id="tJC-P4-obG"/>
+                                    <constraint firstItem="uIC-4m-na3" firstAttribute="top" secondItem="FqL-HA-FZH" secondAttribute="bottom" constant="15" id="tie-SZ-SIJ"/>
+                                    <constraint firstItem="i8q-g0-OoB" firstAttribute="top" secondItem="nlC-xt-uGa" secondAttribute="bottom" constant="27" id="v7f-ch-8Xf"/>
+                                    <constraint firstAttribute="trailing" secondItem="FqL-HA-FZH" secondAttribute="trailing" constant="4" id="y5C-bY-BNm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Cart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPf-nq-3QC">
+                                <rect key="frame" x="42" y="112.5" width="139" height="44.5"/>
+                                <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YWU-9O-L7t"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q4v-ol-YtE" firstAttribute="trailing" secondItem="YWU-9O-L7t" secondAttribute="trailing" id="4Vh-Ux-uxj"/>
+                            <constraint firstItem="aak-FM-LzO" firstAttribute="leading" secondItem="cA6-JB-jfU" secondAttribute="leading" id="7Qj-Lc-Jqk"/>
+                            <constraint firstItem="BPf-nq-3QC" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" constant="42" id="KKB-l0-RDp"/>
+                            <constraint firstItem="Q4v-ol-YtE" firstAttribute="leading" secondItem="YWU-9O-L7t" secondAttribute="leading" id="MD2-yc-aV3"/>
+                            <constraint firstAttribute="trailing" secondItem="aak-FM-LzO" secondAttribute="trailing" id="bh7-6X-1Kc"/>
+                            <constraint firstItem="Q4v-ol-YtE" firstAttribute="top" secondItem="BPf-nq-3QC" secondAttribute="bottom" constant="49" id="kQT-uM-3c3"/>
+                            <constraint firstItem="aak-FM-LzO" firstAttribute="top" secondItem="YWU-9O-L7t" secondAttribute="top" id="swc-Qz-KWG"/>
+                            <constraint firstAttribute="bottom" secondItem="Q4v-ol-YtE" secondAttribute="bottom" id="uTi-WA-mHa"/>
+                            <constraint firstItem="Q4v-ol-YtE" firstAttribute="top" secondItem="aak-FM-LzO" secondAttribute="bottom" constant="118" id="woy-Fj-eiM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AddAddressButton" destination="ABN-3k-aF3" id="Njb-FQ-Xim"/>
+                        <outlet property="CheckoutButton" destination="i8q-g0-OoB" id="NVN-nj-zUl"/>
+                        <outlet property="backButton" destination="08X-yU-qO9" id="Su0-Sb-T6v"/>
+                        <outlet property="deliveryLabel" destination="kPn-wq-67y" id="jAV-1b-QG1"/>
+                        <outlet property="productCartCollectionView" destination="Q80-BH-mdP" id="F9f-5O-Yni"/>
+                        <outlet property="productCartView" destination="Q4v-ol-YtE" id="z9W-4h-ClY"/>
+                        <outlet property="totalLabel" destination="oWY-8U-6V9" id="iNa-hf-Mfa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psv-Wb-mBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.91304347826087" y="-231.02678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group (3)" width="14" height="18"/>
+        <image name="Vector (6)" width="9" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

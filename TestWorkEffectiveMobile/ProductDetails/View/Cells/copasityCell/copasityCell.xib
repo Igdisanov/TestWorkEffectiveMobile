@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mark-Pro.ttf">
+            <string>MarkPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gPs-Zz-k0D" customClass="copasityCell" customModule="TestWorkEffectiveMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xNn-Zh-t2B">
+                <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1i-Bn-mB8">
+                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128 GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXr-G8-fcc">
+                                <rect key="frame" x="14" y="7" width="44.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="MarkPro" family="Mark Pro" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="6Jc-vq-lWw"/>
+                            <constraint firstItem="fXr-G8-fcc" firstAttribute="centerY" secondItem="n1i-Bn-mB8" secondAttribute="centerY" id="SLJ-nL-Yid"/>
+                            <constraint firstItem="fXr-G8-fcc" firstAttribute="centerX" secondItem="n1i-Bn-mB8" secondAttribute="centerX" id="kNa-Cd-vV6"/>
+                            <constraint firstAttribute="width" constant="72" id="ndo-c5-vl2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="n1i-Bn-mB8" secondAttribute="trailing" id="Cwm-vy-V0l"/>
+                    <constraint firstAttribute="bottom" secondItem="n1i-Bn-mB8" secondAttribute="bottom" id="L1P-lK-7mv"/>
+                    <constraint firstItem="n1i-Bn-mB8" firstAttribute="leading" secondItem="xNn-Zh-t2B" secondAttribute="leading" id="XQT-hO-PLo"/>
+                    <constraint firstItem="n1i-Bn-mB8" firstAttribute="top" secondItem="xNn-Zh-t2B" secondAttribute="top" id="gXO-xN-gIk"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="copasityLabel" destination="fXr-G8-fcc" id="xTN-T9-b4g"/>
+                <outlet property="copasityView" destination="n1i-Bn-mB8" id="u46-wR-56y"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="155"/>
+        </collectionViewCell>
+    </objects>
+</document>
