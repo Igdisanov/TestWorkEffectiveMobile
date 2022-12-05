@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h3k-bK-TNO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h3k-bK-TNO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cw-XN-ESZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="48"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zihuatanejo, Gro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-sO-XBj">
                                         <rect key="frame" x="146" y="14.5" width="122.5" height="19.5"/>
@@ -68,13 +69,13 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BtB-8F-Huc">
-                                <rect key="frame" x="0.0" y="92" width="414" height="1408"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="1404"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="uxZ-5y-kKc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1073"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oNI-9g-9pC">
-                                                <rect key="frame" x="0.0" y="532" width="414" height="926"/>
+                                                <rect key="frame" x="0.0" y="532" width="414" height="499"/>
                                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yJR-sg-DfW">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -90,7 +91,7 @@
                                             <constraint firstItem="oNI-9g-9pC" firstAttribute="leading" secondItem="uxZ-5y-kKc" secondAttribute="leading" id="9Vp-E7-XgH"/>
                                             <constraint firstAttribute="trailing" secondItem="oNI-9g-9pC" secondAttribute="trailing" id="O4l-Z3-XvA"/>
                                             <constraint firstAttribute="bottom" secondItem="oNI-9g-9pC" secondAttribute="bottom" constant="42" id="cql-Gv-8TU"/>
-                                            <constraint firstAttribute="height" constant="1500" id="nkX-sL-358"/>
+                                            <constraint firstAttribute="height" constant="1073" id="nkX-sL-358"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8R4-1h-3fE">
